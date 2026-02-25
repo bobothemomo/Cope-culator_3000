@@ -28,7 +28,7 @@ jobs:
           npm --no-git-tag-version version ${{ github.event.release.name }}
 
       - name: Publish to NPM
-        run: npm publish --provenance
+        run: npm publish
 
       - name: Commit and push
         run: |
